@@ -49,11 +49,11 @@ deploy:
         server: $OKE_URL
         token: $OKE_TOKEN
         insecure-skip-tls-verify: true
-        command: patch deployment/medrecapi -p '{"spec":{"progressDeadlineSeconds":60}}'
+        command: patch deployment/asaban -p '{"spec":{"progressDeadlineSeconds":60}}'
 
     - kubectl:
         name: check deployment status
         server: $OKE_URL
         token: $OKE_TOKEN
         insecure-skip-tls-verify: true
-        command: rollout status deployment/medrecapi
+        command: rollout status deployment/asaban
