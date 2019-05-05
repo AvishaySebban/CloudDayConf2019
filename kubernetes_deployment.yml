@@ -1,18 +1,18 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: medrecapi
+  name: asaban
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: medrecapi
+        app: asaban
         version: v1
     spec:
       containers:
       - name: asabanrepo
-        image: registry/repository:v1
+        image: fra.ocir.io/oraseemeail/asabanrepo:v1
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -24,12 +24,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: medrecapi
+  name: asaban
   labels:
-    app: medrecapi
+    app: asaban
 spec:
   ports:
   - port: 8080
     name: http
   selector:
-    app: medrecapi
+    app: asaban
