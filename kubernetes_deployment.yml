@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: asabanrepo
-        image: registry/repository:v1
+        image: fra.ocir.io/oraseemeail/asabanrepo:v1
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
