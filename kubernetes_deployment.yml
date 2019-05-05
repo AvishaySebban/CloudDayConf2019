@@ -11,7 +11,7 @@ spec:
         version: v1
     spec:
       containers:
-      - name: medrecapi
+      - name: asabanrepo
         image: registry/repository:v1
         imagePullPolicy: Always
         ports:
