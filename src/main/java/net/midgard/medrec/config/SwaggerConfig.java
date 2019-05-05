@@ -60,7 +60,7 @@ public class SwaggerConfig {
             .title("Sample SpringBoot APIs")
             .version("1.0")
             .description("Sample SpringBoot REST APIs with Spring Boot")
-            #.contact(new Contact("", "http://localhost", ""))
+            .contact(new Contact("avishay", "http://localhost", "avishay.saban@oracle.com"))
             .build();
   }
 
